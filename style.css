@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    max-width: 370px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 10px auto;
+    border-radius: 7px;
+}
+
+img {
+    max-width: 370px;
+    height: auto;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card__content {
+    margin: 35px;
+}
+
+.h1__span {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    padding-top: 10px;
+}
+
+p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 23px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card_price {
+    display: flex;
+    flex-direction: row;
+}
+
+.first_price {
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Fraunces', serif;
+    margin-right: 20px;
+}
+
+.second_price {
+    text-decoration: line-through;
+    padding-top: 8px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card__btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 700px;
+        height: auto;
+    }
+
+    img {
+        display: none;
+    }
+
+    .card__image{
+        background-image: url(./images/image-product-desktop.jpg);
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+
+    .card__content {
+        width: 560px;
+    }
+
+    
+}
